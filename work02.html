@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- reset -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+    .wrap{
+      max-width: 900px;
+      margin: auto;
+      padding-top: 5rem;
+    }
+    .items{
+      margin-bottom: 8rem;
+    }
+    .item-Introduction-box{
+      position: relative;
+    }
+    .item-bg-box{
+      width: 420px;
+      height: 290px;
+      background-color: #eee;
+      position: absolute;
+      top: 25px;
+      right: 0px;
+    }
+    .item-Introduction{
+      display: flex;
+      margin-right: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+    .item-Introduction-img{
+      width: 100%;
+      margin-top: 7.5rem;
+      margin-left: -5rem;
+      position: relative;
+    }
+    .Introduction-play-icon{
+      position: absolute;
+      top: calc(50% - 20px);
+      right: -10px;
+      padding: 5px 20px;
+      background-color: #d01c16;
+    }
+    .Introduction-play-icon .play-icon{
+      content: '';
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-top: 15px solid transparent;
+      border-left: 22px solid white;
+      border-bottom: 15px solid transparent;
+    }
+    .item-Introduction-text{
+      max-width: 320px;
+      position: relative;
+      z-index: 1;
+    }
+    .Introduction-text-up{
+      padding: 1rem 0;
+      background-color: #e7211b;
+      color: white;
+      display: flex;
+      align-items: center; 
+    }
+    .Introduction-text-up h2{
+      font-size: 36px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+    .Introduction-text-up p{
+      font-size: 100px;
+      line-height: 110px;
+      font-weight: lighter;
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg);
+      margin-left: -10px;
+    }
+    .Introduction-text-down{
+      background-color: #000000;
+      color: white;
+      padding: 25px 20px;
+    }
+    .Introduction-text-down h3{
+      font-size: 24px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      padding-bottom: .5rem;
+    }
+    .Introduction-text-down p{
+      font-weight: lighter;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    .item-Description{
+      background-color: #eee;
+      width: 80%;
+      margin-right: auto;
+      padding: 1.5rem;
+      margin-top: -2rem;
+      position: relative;
+      z-index: 15;
+    }
+    .item-Description-title{
+      display: flex;
+      align-items: center;
+    }
+    .item-Description-title h4{
+      font-size: 18px;
+      color: #af1b16;
+    }
+    .item-Description-line{
+      flex-grow: 1;
+      height: 1px;
+      background-color: #af1b16;
+      margin-left: 1rem;
+    }
+    .item-Description-contents{
+      margin-top: 1.5rem;
+    }
+    .item-Description-contents h5{
+      padding: 2px 8px;
+      background-color: #333;
+      font-size: 16px;
+      font-weight: lighter;
+      color: white;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .item-Description-content{
+      display: flex;
+      margin-left: 16px;
+      padding: .5rem 0;
+    }
+    .item-Description-text{
+      line-height: 1.5;
+      color: rgb(126, 126, 126);
+      font-size: 15px;
+      width: 100%;
+      margin-left: 10px;
+    }
+    .item-Description-box{
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background-color: #af1b16;
+      margin-top: 8px;
+    }
+    .items-box .items:nth-child(even) .item-Introduction-box .item-Introduction{
+      flex-direction: row-reverse;
+      margin-right: 0rem;
+      margin-left: 4rem;
+    }
+    .items-box .items:nth-child(even) .item-Introduction-img{
+      margin-left: 0rem;
+      margin-right: -5rem;
+    }
+    .items-box .items:nth-child(even) .Introduction-play-icon{
+      right: initial;
+      left: -10px;
+    }
+    .items-box .items:nth-child(even) .item-Description{
+      margin-right: inherit;
+      margin-left: auto;
+    }
+    .items-box .items:nth-child(even) .item-bg-box{
+      right: 200px;
+    }
+    .items-box .items+.items .Introduction-text-up p{
+      margin-left: -20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="items-box wrap">
+    <section class="items">
+      <div class="item-Introduction-box">
+        <div class="item-bg-box"></div>
+        <div class="item-Introduction">
+          <div class="item-Introduction-text">
+            <div class="Introduction-text-up">
+              <p>01</p>
+              <h2>操控樂趣</h2>
+            </div>
+            <div class="Introduction-text-down">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>沒有任何通知欣賞熟悉全部明白蘋果破解那樣隨便共享版，能否各種範圍內之中辦法組織什麼相關龍岡差不多，</p>
+            </div>
+          </div>
+          <a href="#" class="item-Introduction-img">
+            <div class="Introduction-play-icon">
+              <div class="play-icon"></div>
+            </div>
+            <!-- <div class="Introduction-img">
+              <img src="https://picsum.photos/1440/1000/?random=1">
+            </div> -->
+          </a>
+        </div>
+      </div>
+      <div class="item-Description">
+        <div class="item-Description-title">
+          <h4>因為我們做了這些革新</h4>
+          <div class="item-Description-line"></div>
+        </div>
+        <ul class="item-Description-contents">
+          <li>
+            <h5>低中心設計</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                透過低重心設計，不僅呈現更低福外觀，更能減少車身側傾不僅呈現更低福外觀，更能減少車身側傾。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>車體剛性強化</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                車身結構採用超強鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊接數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>四輪獨立懸吊</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                搭配全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清新路感回饋，提升駕駛樂趣。
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+
+    </section>
+    <section class="items">
+      <div class="item-Introduction-box">
+        <div class="item-bg-box"></div>
+        <div class="item-Introduction">
+          <div class="item-Introduction-text">
+            <div class="Introduction-text-up">
+              <p>02</p>
+              <h2>安全守護</h2>
+            </div>
+            <div class="Introduction-text-down">
+              <h3>行車更安心的高剛性車體</h3>
+              <p>沒有任何通知欣賞熟悉全部明白蘋果破解那樣隨便共享版，能否各種範圍內之中辦法組織什麼相關龍岡差不多，</p>
+            </div>
+          </div>
+          <a href="#" class="item-Introduction-img">
+            <div class="Introduction-play-icon">
+              <div class="play-icon"></div>
+            </div>
+            <!-- <div class="Introduction-img">
+              <img src="https://picsum.photos/1440/1000?random=2">
+            </div> -->
+          </a>
+        </div>
+      </div>
+      <div class="item-Description">
+        <div class="item-Description-title">
+          <h4>因為我們做了這些革新</h4>
+          <div class="item-Description-line"></div>
+        </div>
+        <ul class="item-Description-contents">
+          <li>
+            <h5>低中心設計</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                透過低重心設計，不僅呈現更低福外觀，更能減少車身側傾不僅呈現更低福外觀，更能減少車身側傾。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>車體剛性強化</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                車身結構採用超強鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊接數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>四輪獨立懸吊</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                搭配全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清新路感回饋，提升駕駛樂趣。
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+
+    </section>
+    <section class="items">
+      <div class="item-Introduction-box">
+        <div class="item-bg-box"></div>
+        <div class="item-Introduction">
+          <div class="item-Introduction-text">
+            <div class="Introduction-text-up">
+              <p>03</p>
+              <h2>乘坐舒適</h2>
+            </div>
+            <div class="Introduction-text-down">
+              <h3>令人方鬆舒適的車室空間</h3>
+              <p>沒有任何通知欣賞熟悉全部明白蘋果破解那樣隨便共享版，能否各種範圍內之中辦法組織什麼相關龍岡差不多，</p>
+            </div>
+          </div>
+          <a href="#" class="item-Introduction-img">
+            <div class="Introduction-play-icon">
+              <div class="play-icon"></div>
+            </div>
+            <!-- <div class="Introduction-img">
+              <img src="https://picsum.photos/1440/1000?random=3">
+            </div> -->
+          </a>
+        </div>
+      </div>
+      <div class="item-Description">
+        <div class="item-Description-title">
+          <h4>因為我們做了這些革新</h4>
+          <div class="item-Description-line"></div>
+        </div>
+        <ul class="item-Description-contents">
+          <li>
+            <h5>低中心設計</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                透過低重心設計，不僅呈現更低福外觀，更能減少車身側傾不僅呈現更低福外觀，更能減少車身側傾。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>車體剛性強化</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                車身結構採用超強鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊接數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>四輪獨立懸吊</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                搭配全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清新路感回饋，提升駕駛樂趣。
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+
+    </section>
+    <section class="items">
+      <div class="item-Introduction-box">
+        <div class="item-bg-box"></div>
+        <div class="item-Introduction">
+          <div class="item-Introduction-text">
+            <div class="Introduction-text-up">
+              <p>04</p>
+              <h2>以人為本</h2>
+            </div>
+            <div class="Introduction-text-down">
+              <h3>使用者導向的貼心設計</h3>
+              <p>沒有任何通知欣賞熟悉全部明白蘋果破解那樣隨便共享版，能否各種範圍內之中辦法組織什麼相關龍岡差不多，</p>
+            </div>
+          </div>
+          <a href="#" class="item-Introduction-img">
+            <div class="Introduction-play-icon">
+              <div class="play-icon"></div>
+            </div>
+            <div class="Introduction-img">
+              <img src="https://picsum.photos/1440/1000?random=4">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="item-Description">
+        <div class="item-Description-title">
+          <h4>因為我們做了這些革新</h4>
+          <div class="item-Description-line"></div>
+        </div>
+        <ul class="item-Description-contents">
+          <li>
+            <h5>低中心設計</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                透過低重心設計，不僅呈現更低福外觀，更能減少車身側傾不僅呈現更低福外觀，更能減少車身側傾。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>車體剛性強化</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                車身結構採用超強鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊接數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>四輪獨立懸吊</h5>
+            <ul class="item-Description-content">
+              <li class="item-Description-box"></li>
+              <li class="item-Description-text">
+                搭配全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清新路感回饋，提升駕駛樂趣。
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>
